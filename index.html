@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="nav-bar"></div>
+<div id="app">
+	<div class="cart">
+
+		<p>Cart({{ cart.length }})</p>
+	</div>
+<!--	<div class="remove">-->
+<!--		<p>Cart({{remove}})</p>-->
+	<product :premium="premium" @add-to-cart="updateCart"></product>
+	<product></product>
+	<product></product>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	<script src="main.js"> </script>
+</body>
+</html>
